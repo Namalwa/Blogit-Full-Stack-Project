@@ -1,0 +1,64 @@
+.formdata-container{
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formheading{
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.formgroup{
+    margin-bottom: 0.5rem;
+}
+
+.signup-form input{
+    padding: 0.5rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.signup-form label {
+    display: block;
+    font-weight: bold;
+  }
+
+.createaccount-container{
+    justify-content: center;
+    display: flex;
+}
+.createaccount-btn{
+    padding: 0.7rem;
+    background-color: #8C3061;
+    color: white;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    min-width: 150px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.createaccount-btn:hover{
+    background-color:#C63C51 ;
+}
+
+.login-link{
+   text-decoration:none;
+    
+}
+
+.existing{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
