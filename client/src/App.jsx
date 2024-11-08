@@ -5,6 +5,7 @@ import Signup from "./Pages/Signup/Signup";
 import Home from "./Pages/Home/Home"; 
 import Login from "./Pages/Login/Login";
 import Explore from "./Pages/Explore/Explore";
+import Write from "./Pages/Write/Write";
 import "./App.css";
 
 const client = new QueryClient()
@@ -19,6 +20,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login/>}/>
             <Route path="/explore" element={<Explore/>}/>
+            <Route path="/write" element={<Write/>}/>
             </Routes>
         </BrowserRouter>
          </QueryClientProvider>
