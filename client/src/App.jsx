@@ -6,15 +6,17 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import Explore from "./Pages/Explore/Explore";
 import Write from "./Pages/Write/Write";
-<<<<<<< HEAD
-=======
 import Articles from "./Pages/Articles/Articles";
 import BlogDetail from "./Pages/BlogDetail/BlogDetail";
->>>>>>> 5c94229 (creating a blog)
+import Bloglist from "./Pages/Bloglist/Bloglist";
+import Profile from "./Pages/Profile/Profile";
+import Edit from "./Pages/Edit/Edit";
+import MyBlogs from "./Pages/MyBlogs/MyBlogs";
 import "./App.css";
 
-const client = new QueryClient()
 
+
+const client = new QueryClient()
 function App() {
     return (
         <QueryClientProvider client={client}>
@@ -26,14 +28,15 @@ function App() {
             <Route path="/login" element={<Login/>}/>
             <Route path="/explore" element={<Explore/>}/>
             <Route path="/write" element={<Write/>}/>
-<<<<<<< HEAD
-=======
             <Route path="/articles" element={<Articles/>}/>
             <Route path="/blog/:id" element={<BlogDetail />} />
->>>>>>> 5c94229 (creating a blog)
+            <Route path="/bloglist" element={<Bloglist/>}/>
+            <Route path="profile" element={<Profile/>}/>
+            <Route path="/edit/:id" element={<Edit />} />
+            <Route path="/myblogs" element={<MyBlogs/>}/>
             </Routes>
         </BrowserRouter>
-         </QueryClientProvider>
+        </QueryClientProvider> 
     );
 }
 

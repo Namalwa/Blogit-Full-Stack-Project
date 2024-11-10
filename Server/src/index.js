@@ -1,7 +1,7 @@
 import express from 'express'; 
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import { createBlog, fetchSingleBlog, fetchAllBlogs, getUserBlogs, deleteBlog} from './controllers/blogs.controllers.js';
+import { createBlog, fetchSingleBlog, fetchAllBlogs, getUserBlogs, deleteBlog, updateBlog} from './controllers/blogs.controllers.js';
 import { registerUser } from './controllers/users.controllers.js';
 import { logginUsers } from './controllers/auth.controllers.js';
 import verifyToken from "./middleware/verifyToken.js";
@@ -29,6 +29,7 @@ app.get("/blogs/user", verifyToken, getUserBlogs);
 app.get("/blogs/:id", verifyToken, fetchSingleBlog);
 app.get("/blogs", fetchAllBlogs);
 app.delete("/blogs/:blogId",  deleteBlog);
+app.put("/blogs/:id",verifyToken ,validateBlog ,updateBlog)
 
 
 

@@ -99,5 +99,26 @@ export async  function deleteBlog(req, res) {
 
 }
 
+export async function updateBlog(req, res) {
+    try {
+      const { id } = req.params;
+      const { title, excerpt, body } = req.body;
+      const UserId = req.userId.id; 
+  
+      const blog = await prisma.blogPost.update({
+        where: {
+          id: id,
+          owner: UserId,  
+        },
+        data: { title, excerpt, body },
+      });
+  
+      res.status(200).json(blog);
+    } catch (error) {
+      console.error(error); 
+      res.status(500).json({ message: error.message });
+    }
+  }
+
 
 

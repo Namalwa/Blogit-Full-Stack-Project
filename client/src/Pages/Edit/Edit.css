@@ -1,0 +1,62 @@
+.write-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.write-page label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.write-page input[type="text"],
+.write-page input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.texteditor-container {
+    margin-bottom: 20px;
+}
+
+.custom-editor .ql-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 300px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.button-section{
+    text-align:center;
+}
+.publish-button {
+    display: inline-block;
+    background-color: #8C3061;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.publish-button:hover {
+    background-color:  #C63C51;
+}
+
+.write-page img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
